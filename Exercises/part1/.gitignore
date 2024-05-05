@@ -15,8 +15,8 @@ dist-ssr
 index.html
 *.json
 *.md
-vite.config.js
-.eslintrc.cjs
+*.config.js
+*.cjs
 
 
 # Editor directories and files
