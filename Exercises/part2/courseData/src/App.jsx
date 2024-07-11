@@ -1,6 +1,6 @@
-import Course from "./compononets/Course";
+import { Course } from "./components/Course"
 
-const App = () => {
+function App() {
   const courses = [
     {
       name: 'Half Stack application development',
@@ -45,15 +45,13 @@ const App = () => {
       ]
     }
   ]
-
   return (
     <>
-      <h1>Web development curriculum</h1>
-      {courses.map((course, index) => (
-        <Course key={index} course={course} />
+      {courses.map((course) => (
+        <Course key={course.id} course={course} />
       ))}
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
